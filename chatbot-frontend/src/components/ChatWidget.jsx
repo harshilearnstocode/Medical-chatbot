@@ -15,7 +15,6 @@ function ChatWidget() {
   const [listening, setListening] = useState(false);
   const recognitionRef = useRef(null);
 
-  // Speech Recognition Setup
   useEffect(() => {
     if (
       !("webkitSpeechRecognition" in window || "SpeechRecognition" in window)
